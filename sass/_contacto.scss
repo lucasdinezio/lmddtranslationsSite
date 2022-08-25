@@ -1,0 +1,107 @@
+/* SECCIÓN CONTACTO FLEXBOX */
+
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-direction: column;
+
+    .contact-info{
+        max-width: 500px;
+        line-height: 65px;
+        padding-left: 50px;
+        font-size: 18px;
+        color: #fff;
+
+        i{
+            margin-right: 20px;
+            font-size: 25px;
+        }
+    }
+}
+  
+.contact-info{
+    flex: 1;
+}
+
+.contact-form{
+    flex: 1;
+
+    .h2{
+        color: #fff;
+        text-align: left;
+        font-size: 35px;
+        text-transform: uppercase;
+        padding-top: 2vh;
+        margin-bottom: 30px;
+        font-weight: 900;
+    }
+
+    .text-box{
+        background-image: linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );
+        color: #fff;
+        border: none;
+        width: calc(50% - 10%);
+        height: 50px;
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 15px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        opacity: 0.9;
+
+        .first-child{
+            margin-right: 15px;
+        }
+    }
+
+    textarea{
+        background-image: linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+        min-height: 200px;
+        max-height: 400px;
+        resize: vertical;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        opacity: 0.7;
+    }
+
+    .send-btn{
+        float: right;
+        background-image: linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );
+        color: #fff;
+        border: none;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.9s;
+        transition-property: background-image;   
+    }
+
+    .send-btn:hover{
+        background-image: linear-gradient( 180deg,  rgba(21,13,107,1) 1.1%, rgba(188,16,80,1) 130.5% );
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
