@@ -61,7 +61,81 @@
         </div>
       </nav>
 
-<!-- FORMULARIO DE CONTACTO -->
+<!-- FORMULARIO PARA COTIZACIÓN CON ADJUNTADO DE MÚLTIPLES ARCHIVOS -->
+
+<div class="contact_form">
+
+  <div class="formulario">      
+    <h1>Completa los siguientes datos para recibir la cotización</h1>
+      <h3>Escríbeme y recibirás la cotización en breve</h3>
+
+
+        <form action="submeter-formulario.php" method="post">       
+
+          
+              <p>
+                <label for="nombre" class="colocar_nombre">Nombre y apellido
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+              </p>
+            
+              <p>
+                <label for="email" class="colocar_email">Email
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+              </p>
+          
+              <p>
+                <label for="telefone" class="colocar_telefono">Teléfono
+                </label>
+                  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+              </p>    
+                        
+              <p>
+                <label for="asunto" class="colocar_asunto">Seleccione el servicio
+                  <span class="obligatorio">*</span>
+                </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Servicios brindados</option>
+                  <option value="1">Traducción científica y técnica</option>
+                  <option value="2">Traducción literaria</option>
+                  <option value="3">Traducción de IT</option>
+                  <option value="4">Traducción de turismo</option>
+                  <option value="5">Subtitulado y sincronización</option>
+                  <option value="6">Corrección y edición de textos</option>
+                  <option value="7">Clases online</option>
+                  <option value="8">Preparación para exámenes internacionales</option>
+                  <option value="9">Inglés técnico</option>
+                  <option value="10">Clases de conversación</option>
+                </select>
+              </p>    
+            
+              <p>
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                  <span class="obligatorio">*</span>
+                </label>                     
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+              </p>                    
+            
+              <p>
+                <div class="mb-3">
+                  <label for="formFileMultiple" class="form-label">Seleccione archivo/s</label>
+                    <span class="obligatorio">*</span>
+                  <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div>
+              </p>
+
+              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+              <p class="aviso">
+                <span class="obligatorio"> * </span>Campos obligatorios.
+              </p>          
+          
+        </form>
+  </div>  
+</div>
 
       
 
