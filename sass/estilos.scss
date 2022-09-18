@@ -2,6 +2,7 @@
 @import "generales";
 @import "contacto";
 @import "cotizacion";
+@import "arancelesorientativos";
 
 
 
@@ -159,6 +160,927 @@ h1{
     outline:0;
     border: 1px solid #97d848;
   }
+
+
+/* SECCIÓN ARANCELES ORIENTATIVOS */
+
+.tablaDeArancelesOrientativos{
+  display: flex;
+  flex-direction: row;
+  align-content: inherit;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 95%;
+}
+
+.tablaDeArancelesOrientativos0{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 95%;
+  justify-content: center;
+}
+
+.arancelesOrientativos0{
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: solid;
+  border-radius: 1rem;
+}
+
+.arancelesOrientativos1{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #202020eb;
+  font-size: 30px;
+}
+
+.arancelesOrientativos2{
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  color: #000000c2;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: italic;
+  font-variant: petite-caps;
+}
+
+div.table-title {
+display: block;
+ margin: auto;
+ max-width: 600px;
+ padding:5px;
+ width: 100%;
+}
+
+.table-fill {
+ background: white;
+ border-radius:3px;
+ border-collapse: collapse;
+ height: 320px;
+ margin: auto;
+ margin-left: 18rem;
+ max-width: 600px;
+ padding:5px;
+ width: 100%;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ animation: float 5s infinite;
+}
+
+.table-fill0{
+ background: white;
+ border-radius:3px;
+ border-collapse: collapse;
+ height: 320px;
+ margin: initial;
+ margin-right: 18rem;
+ max-width: 600px;
+ padding:5px;
+ width: 100%;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ animation: float 5s infinite;
+}
+
+.table-fill1{
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: initial;
+  margin-right: 18rem;
+  margin-left: 18rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  animation: float 5s infinite;
+ }
+
+ .table-fill2{
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: initial;
+  margin-right: 18rem;
+  margin-left: 18rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  animation: float 5s infinite;
+ }
+
+th {
+ color:#D5DDE5;;
+ background:#1b1e24;
+ border-bottom:4px solid #9ea7af;
+ border-right: 1px solid #343a45;
+ font-size:23px;
+ font-weight: 100;
+ padding:24px;
+ text-align:left;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+ vertical-align:middle;
+}
+
+th:first-child {
+ border-top-left-radius:3px;
+}
+
+th:last-child {
+ border-top-right-radius:3px;
+ border-right:none;
+}
+ 
+tr {
+ border-top: 1px solid #C1C3D1;
+ border-bottom: 1px solid #C1C3D1;
+ color:#666B85;
+ font-size:16px;
+ font-weight:normal;
+ text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+ background:#4E5066;
+ color:#FFFFFF;
+ border-top: 1px solid #22262e;
+}
+
+tr:first-child {
+ border-top:none;
+}
+
+tr:last-child {
+ border-bottom:none;
+}
+
+tr:nth-child(odd) td {
+ background:#EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+ background:#4E5066;
+}
+
+tr:last-child td:first-child {
+ border-bottom-left-radius:3px;
+}
+
+tr:last-child td:last-child {
+ border-bottom-right-radius:3px;
+}
+
+td {
+ background:#FFFFFF;
+ padding:20px;
+ text-align:left;
+ vertical-align:middle;
+ font-weight:300;
+ font-size:18px;
+ text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+ border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+ border-right: 0px;
+}
+
+th.text-left {
+ text-align: left;
+}
+
+th.text-center {
+ text-align: center;
+}
+
+th.text-right {
+ text-align: right;
+}
+
+td.text-left {
+ text-align: left;
+}
+
+td.text-center {
+ text-align: center;
+}
+
+td.text-right {
+ text-align: right;
+}
+
+/* SECCIÓN FOOTER */
+
+.btn_1{
+  border: none;
+}
+
+/* MEDIA QUERY - SECCIÓN COTIZACIÓN */
+
+@media screen and (max-width: 950px){
+  .contact_form{  
+    width: 370px; 
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+  }
+  
+  input{
+    background-color: #fbfbfb; 
+    width: 320px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 3px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  .form-select{
+    background-color: #fbfbfb; 
+    width: 320px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 3px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    font-size: 14px;
+    color: #a7a7a7;
+    font-weight: 400;
+  }
+  textarea{
+    background-color: #fbfbfb; 
+    width: 320px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 3px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  label{
+    display: block; 
+    float: center;  
+  }
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #ab4493; 
+    border-color: #ab4493; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 322px;   
+    cursor: pointer;
+  }
+
+  .form-control[type=file]:not(:disabled):not([readonly]) {
+    background-color: #fbfbfb; 
+    width: 113px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 3px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    font-size: 14px;
+    color: #a7a7a7;
+    font-weight: 400;
+  
+  }
+}
+
+/* MEDIA QUERY - SECCIÓN ARANCELES ORIENTATIVOS */
+
+@media screen and (min-width: 280px) and (max-width: 375px){
+
+  .arancelesOrientativos1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #202020eb;
+    font-size: 30px;
+}
+
+  .table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: auto;
+    margin-left: 0rem;
+    margin-right: 0;
+    max-width: 600px;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+   }
+
+   .table-fill0 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: auto;
+    margin-left: 0rem;
+    margin-top: 4rem;
+    max-width: 600px;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill1 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-top: 4rem;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill2 {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: initial;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  animation: float 5s infinite;
+}
+
+.tablaDeArancelesOrientativos {
+  display: flex;
+  flex-direction: column;
+  align-content: inherit;
+  flex-wrap: wrap-reverse;
+  margin-left: 0rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.tablaDeArancelesOrientativos0 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  width: 92%;
+}
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+
+  .arancelesOrientativos1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #202020eb;
+    font-size: 30px;
+}
+
+  .table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+   }
+
+   .table-fill0 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill1 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-top: 4rem;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill2 {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: initial;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  animation: float 5s infinite;
+}
+
+.tablaDeArancelesOrientativos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 92%;
+}
+
+.tablaDeArancelesOrientativos0 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  width: 92%;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px){
+
+  .arancelesOrientativos1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #202020eb;
+    font-size: 30px;
+}
+
+  .table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    margin: auto;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    max-width: 734px;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+   }
+
+   .table-fill0 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-left: 2rem;
+    max-width: 734%;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill1 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill2 {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: initial;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  animation: float 5s infinite;
+}
+
+.tablaDeArancelesOrientativos {
+  display: flex;
+  flex-direction: row;
+  align-content: inherit;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 92%;
+}
+
+.tablaDeArancelesOrientativos0 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  width: 92%;
+}
+
+}
+
+@media screen and (min-width: 951px) and (max-width: 1023px){
+
+  .arancelesOrientativos1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #202020eb;
+    font-size: 30px;
+}
+
+  .table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    margin: auto;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    max-width: 804px;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+   }
+
+   .table-fill0 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-left: 2rem;
+    max-width: 734%;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill1 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill2 {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: initial;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  animation: float 5s infinite;
+}
+
+.tablaDeArancelesOrientativos {
+  display: flex;
+  flex-direction: row;
+  align-content: inherit;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 92%;
+}
+
+.tablaDeArancelesOrientativos0 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  width: 92%;
+}
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1263px){
+
+  .tablaDeArancelesOrientativos0 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 90%;
+    justify-content: center;
+}
+  
+  .arancelesOrientativos1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #202020eb;
+    font-size: 30px;
+}
+
+  .table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    margin: auto;
+    margin-left: 10rem;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+   }
+
+   .table-fill0 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-left: 10rem;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill1 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill2 {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: initial;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  animation: float 5s infinite;
+}
+.tablaDeArancelesOrientativos {
+  display: flex;
+  flex-direction: row;
+  align-content: inherit;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 92%;
+}
+
+.tablaDeArancelesOrientativos0 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  width: 92%;
+} 
+
+}
+
+@media only screen and (min-width: 1331px) and (max-width: 1440px){
+
+  .tablaDeArancelesOrientativos0 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 90%;
+    justify-content: center;
+}
+  
+  .arancelesOrientativos1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #202020eb;
+    font-size: 30px;
+}
+
+  .table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    margin: auto;
+    margin-left: 0rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+   }
+
+   .table-fill0 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-left: 2rem;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill1 {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: initial;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    animation: float 5s infinite;
+}
+
+.table-fill2 {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: initial;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  animation: float 5s infinite;
+}
+.tablaDeArancelesOrientativos {
+  display: flex;
+  flex-direction: row;
+  align-content: inherit;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 95%;
+}
+
+.tablaDeArancelesOrientativos0 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  width: 92%;
+} 
+
+}
 
 /* MEDIA QUERY - SECCIÓN CONTACTO */
 
