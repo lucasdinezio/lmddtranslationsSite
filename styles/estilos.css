@@ -17,6 +17,15 @@ body {
   border-radius: 10%;
 }
 
+/* SECCIÓN HOME */
+
+.lmddtranslations{
+  color:#1b1e24;
+  font-weight: 900;
+  margin: 1rem;
+  padding: 1rem;
+}
+
 /* SECCIÓN CONTACTO FLEXBOX */
 .contact-section {
   display: flex;
